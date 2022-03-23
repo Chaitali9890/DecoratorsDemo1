@@ -2,7 +2,8 @@ import { LightningElement, api } from 'lwc';
 
 export default class Childcom extends LightningElement {
 
-  @api progressValue;
+  //api decorator
+  @api progressValue; 
   handleChnage(event) {
     this.progressValue = event.target.value;
     // Creates the event with the data.
